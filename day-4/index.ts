@@ -1,4 +1,4 @@
-//Enums Concep Example
+//Enums Concept Example
 const enum HttpStatusCodes {
   Ok = 200,
   Created = 201,
@@ -10,7 +10,7 @@ const enum HttpStatusCodes {
   ServerError = 500,
 }
 
-console.log(HttpStatusCodes.Unauthorized);
+console.log(HttpStatusCodes.Ok);
 
 function getErrorMessage(statusCode: HttpStatusCodes): string {
   switch (statusCode) {
@@ -42,7 +42,7 @@ console.log(getErrorMessage(HttpStatusCodes.Forbidden)); // Output: "User does n
 
 enum DaysOfWeek {
   Monday,
-  Tuesday,
+  Tuesday = 3,
   Wednesday,
   Thursday,
   Friday,
