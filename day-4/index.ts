@@ -70,3 +70,58 @@ enum BooleanLikeHeterogeneousEnum {
   No = 0,
   Yes = "YES",
 }
+
+// Array methonds
+
+let names = [
+  "Qasim",
+  "Hammad",
+  "Salman",
+  "Faiz",
+  "Khubaib",
+  "Hamza",
+  "Don",
+  "Mark",
+  "Elvin",
+];
+let newNames = names.join(" Janati, ");
+console.log(newNames);
+
+//POP
+let poppedElement = names.pop();
+console.log(poppedElement);
+console.log(names);
+
+//Reverse
+
+let reversedArray = [...names].reverse();
+
+console.log("Reversed Array: ", reversedArray);
+console.log("Orignal Array: ", names);
+
+//SHIFT
+let shiftedElement = names.shift();
+console.log(shiftedElement);
+console.log(names);
+
+//UNSHIFT
+let unShiftedArray = names.unshift("Qasim");
+console.log(unShiftedArray);
+console.log(names);
+
+//Slice
+const trimmedArray = names.splice(6, 7);
+console.log(trimmedArray);
+console.log(names);
+
+//Splice
+const res = names.splice(1, 0, "Madiyan", "Bhatti");
+console.log(res);
+console.log(names);
+
+//toString
+const stringifyArray = names.toString();
+console.log(stringifyArray);
+console.log(names);
+
+
